@@ -1,0 +1,245 @@
+cd desktop
+mkdir cs50
+mkdir cs50/cs50Web
+touch cs50Web.txt   inside  cs50/notesCs50
+
+open -e cs50Web.txt
+
+cmd B    bold
+cmd shift T    toggle between plaintext and rich text formats
+cmd K       add link 
+
+#############################################
+
+Lecture 0
+https://courses.edx.org/courses/course-v1:HarvardX+CS50W+Web/course/
+
+#############################################
+
+cs50Web/project0/
+index.html
+README.md
+
+GIT 
+https://cs50.github.io/web/2018/x/notes/0
+
+GitHub
+https://github.com/gitmeg22
+
+#############################################
+
+Add Repository       Plus button in top right
+lecture0
+copy url link
+
+cd cs50Web
+
+$git clone <url>
+Cloning into 'lecture0'...
+warning: You appear to have cloned an empty repository.
+
+cd lecture0
+
+touch hello.html
+subl hello.html
+
+! + tab    create html document head and body
+
+#############################################
+
+$git add hello.html           track this file for a later save 
+
+$git commit -m "added hello.html"        save new version or snapshot
+[master (root-commit) e13bb91] added hello.html
+ 1 file changed, 10 insertions(+)
+ create mode 100644 hello.html
+
+$git status
+nothing to commit, working tree clean
+
+$git push
+To https://github.com/gitmeg22/lecture0.git
+ * [new branch]      master -> master
+
+hello.html appears online 
+
+#############################################
+
+YOU EDITED THE CODE ONLINE... 
+
+$git pull                pull changes from online version down to local
+From https://github.com/gitmeg22/lecture0
+   e13bb91..f2ffd63  master     -> origin/master
+Updating e13bb91..f2ffd63
+Fast-forward
+ hello.html | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+sublime file hello.html now reflects file that is online 
+
+#############################################
+
+YOU EDITED THE CODE ON YOUR LOCAL COMPUTER...
+$git add hello.html
+$git commit -m "Add a third line"
+
+#############################################
+
+SOMEONE ELSE EDITED THE CODE ONLINE...
+
+$git pull
+Auto-merging hello.html
+CONFLICT (content): Merge conflict in hello.html
+Automatic merge failed; fix conflicts and then commit the result.
+
+#############################################
+
+MERGE CONFLICT
+
+#############################################
+
+CHECK OUT SUBLIME hello.html...
+LOCAL CHANGES ARE SHOWN ABOVE ONLINE CHANGES...
+ 
+<body>
+<<<<<<< HEAD
+	Hello, world! Hello again! Hello a third time!
+||||||| merged common ancestors
+	Hello, world! Hello again!
+=======
+	Hello, world! Hello again! Hello hello hello!
+>>>>>>> 8bbbccda004af6dc04aa846465eeebc693bf189a
+</body>
+
+PICK WHICH ONE YOU WANT TO SAVE...
+DELETE ALL OTHER INFORMATION...
+
+<body>
+	Hello, world! Hello again! Hello a third time!
+</body>
+
+#############################################
+
+$git commit -m "Fix merge conflict"
+U	hello.html
+error: Committing is not possible because you have unmerged files.
+hint: Fix them up in the work tree, and then use 'git add/rm <file>'
+hint: as appropriate to mark resolution and make a commit.
+fatal: Exiting because of an unresolved conflict.
+
+$git status
+On branch master
+Your branch and 'origin/master' have diverged,
+and have 1 and 1 different commits each, respectively.
+  (use "git pull" to merge the remote branch into yours)
+
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+  (use "git merge --abort" to abort the merge)
+
+Unmerged paths:
+  (use "git add <file>..." to mark resolution)
+
+	both modified:   hello.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+#############################################
+
+NEED TO ADD TO STAGING AREA BEFORE COMMITTING...
+
+$git add hello.html
+$git commit -m "Fix merge conflict"
+
+#############################################
+
+DO BOTH AT ONCE...
+
+$git commit -am <filename(s)> "message"
+ex.
+$git commit -am hello.html "Fix merge conflict"
+
+#############################################
+
+$git log                  history of all commits made in repository
+
+$git reset --hard <commit hash number>        reset repo to this version
+
+$git reset --hard origin/master           reset repo to original state
+
+#############################################
+
+grab first few pieces of hash to reset to an earlier version of the code  
+ex. 
+e13bb911a7
+
+PRESS 'Q' TO ESCAPE LOG
+
+$git reset --hard e13bb911a7
+HEAD is now at e13bb91 added hello.html
+
+CHECK SUBLIME hello.html
+IT IS BACK TO THE ORIGINAL VERSION 
+
+#############################################
+
+GITHUB ONLINE DID NOT RESET!!!!
+MUST PUSH CHANGES!!!!
+
+#############################################
+
+USE GIT ADD FOR EACH FILE
+THEN COMMIT ENTIRE REPOSITORY/FOLDER
+
+THIS KEEPS FILES THAT ARE READY TO GO, THE ONLY FILES THAT GET COMMITTED
+
+#############################################
+
+GITHUB PAGES
+
+#############################################
+
+In Lecture0 repository
+Click on SETTINGS
+Scroll down to GitHub Pages
+
+Source: master branch     default branch on this repository
+
+SAVE
+
+	•	Your site is ready to be published at https://gitmeg22.github.io/lecture0/.
+	•	
+	•	 Your site is published at https://gitmeg22.github.io/lecture0/
+
+YOU NEED TO ADD THE FILE NAME TO THE END OF THE WEB ADDRESS...
+
+/hello.html
+
+https://gitmeg22.github.io/lecture0/hello.html
+
+#############################################
+#############################################
+#############################################
+#############################################
+#############################################
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
