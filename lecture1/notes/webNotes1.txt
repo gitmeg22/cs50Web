@@ -1,0 +1,49 @@
+LECTURE 1 
+HTML & CSS 
+
+make frequent commits
+commit list can get long
+
+create a new feature to project? not sure if it'll work ou?
+create a new branch
+
+fixing a bug in a linear way is so much harder
+
+########################
+master branch is always usable
+
+we're in a stable place and wanna try something new?
+branch off!
+
+now, if we find a bug, we can go back to the master, 
+	fix the bug 
+fixes bug without merging (yet!) the new feature
+
+########################
+change the HEAD 
+CHECKOUT the feature branch 
+	by changing the head (version you're working on)
+
+then merge
+########################
+
+lecture 1 repo
+index.html
+test website
+
+
+########################
+########################
+########################
+########################
+########################
+########################
+########################
+########################
+########################
+########################
+########################
+########################
+########################
+########################
+########################
