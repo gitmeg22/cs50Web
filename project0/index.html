@@ -8,26 +8,81 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 	    
 	<style>
-		ul {
+		nav ul {
 		    list-style-type: none;
 		    margin: 0;
 		    padding: 0;
+		}
+		
+		table {
+			width: 100%;
+		}
+
+		table, th, td {
+		    border: 1px solid black;
+		    border-collapse: collapse;
+		    padding: 1em;
 		}
 	</style>
 	    
     </head>
     <body>
         
-        <nav class="navbar">
-		<ul>
-		    <li><a href="notes.html">Notes</a></li>
-		    <li><a href="about.html">About</a></li>
-		    <li><a href="events.html">Events</a></li>
-		    <li><a href="misc.html">Miscellaneous</a></li>
-		</ul>
-    	</nav>
+		<header>
 
-    	<h1>Home!</h1>
+	    	<h1>Paper, Paper, Paper</h1>
+	    	<p>Project 0: CS50 Web Programming</p>
+
+			<nav class="navbar">
+				<ul>
+				    <li><a href="notes.html">Notes</a></li>
+				    <li><a href="about.html">About</a></li>
+				    <li><a href="events.html">Events</a></li>
+				    <li><a href="misc.html">Miscellaneous</a></li>
+				</ul>
+    		</nav>
+		</header>
+
+		<section>
+			
+			<article>
+
+				<header>
+					<h2>Books on my shelf</h2>
+					<p>In no particular order...</p>
+				</header>
+
+				<table>
+				  <tr>
+				    <th>Title</th>
+				    <th></th> 
+				    <th>Author</th>
+				    <th>Copyright</th>
+				  </tr>
+				  <tr>
+				    <td>If This Isn't Nice, What Is?</td>
+				    <td>: The Graduation Speeches and Other Words to Live By</td>
+				    <td>Kurt Vonnegut</td>
+				    <td>2013</td>
+				  </tr>
+				  <tr>
+				    <td>The Uprooted</td>
+				    <td>: The Epic Story of the Great Migrations that Made the American People</td>
+				    <td>Oscar Handlin</td>
+				    <td>1951</td>
+				  </tr>
+				  <tr>
+				    <td>The Art of Dramatic Writing</td>
+				    <td>: Its Basis in the Creative Interpretation of Human Motives</td>
+				    <td>Lajos Egri</td>
+				    <td>1946</td>
+				  </tr>
+				</table>
+
+			</article>
+
+		</section>
+
 
     </body>
 </html>
